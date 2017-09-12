@@ -15,7 +15,9 @@ Features
 Examples
 --------
 
-test.json ::
+test.json 
+        ::
+        
         {
           "arr": [
             123,
@@ -28,18 +30,25 @@ test.json ::
           "test": "test"
         }
 
-Colorized indented:::
+Colorized indented:
+        ::
+        
         printjson test.json
 
-Minimized monochrome:::
+Minimized monochrome:
+        ::
+        
         printjson -om test.json
 
-        ::{"test":"test","arr":[123,"λάμβδα ラムダ lambda",["1","2"]]}
+        ::
+        
+        {"test":"test","arr":[123,"λάμβδα ラムダ lambda",["1","2"]]}
 
 Print third entry of "arr" array, using "__" as delimiter:::
         printjson -k arr__2 -d__ test3.json
 
         ::
+        
         [
           "1",
           "2"
