@@ -29,6 +29,7 @@ Examples
           "test": "test"
         }
 
+
  - Colorized indented::
  
         printjson test.json
@@ -41,7 +42,7 @@ Result::
         
         {"test":"test","arr":[123,"λάμβδα ラムダ lambda",["1","2"]]}
 
-Print third entry of "arr" array, using "__" as delimiter::
+- Print third entry of "arr" array, using "__" as delimiter::
 
         printjson -k 'arr__2' -d '__' test3.json
 
