@@ -12,5 +12,38 @@ Features
 - Check JSON for correctness
 - Automatically disabling color sequences, when prints to pipeline, file or other non-tty output
 
+Examples
+--------
+
+test.json ::
+        {
+          "arr": [
+            123,
+            "λάμβδα ラムダ lambda",
+            [
+              "1",
+              "2"
+            ]
+          ],
+          "test": "test"
+        }
+
+Colorized indented:::
+        printjson test.json
+
+Minimized monochrome:::
+        printjson -om test.json
+
+        ::{"test":"test","arr":[123,"λάμβδα ラムダ lambda",["1","2"]]}
+
+Print third entry of "arr" array, using "__" as delimiter:::
+        printjson -k arr__2 -d__ test3.json
+
+        ::
+        [
+          "1",
+          "2"
+        ]
+
 
 
