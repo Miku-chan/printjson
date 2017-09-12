@@ -30,7 +30,7 @@ Examples
           ],
           "test": "test"
         } 
-::
+
  
  - Colorized indented
  
