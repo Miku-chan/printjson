@@ -17,7 +17,7 @@ Examples
 
 - test.json
  
-.. code:: json
+.. code-block:: json
 
         {
           "arr": [
@@ -30,35 +30,34 @@ Examples
           ],
           "test": "test"
         }
-
-
+ 
  - Colorized indented
  
-.. code:: bash
+.. code-block:: bash
  
         printjson test.json
 
 - Minimized monochrome
  
-.. code:: bash
+.. code-block:: bash
  
         printjson -om test.json
 
 Result:
  
-.. code:: json
+.. code-block:: json
  
         {"test":"test","arr":[123,"λάμβδα ラムダ lambda",["1","2"]]}
 
 - Print third entry of "arr" array, using "__" as delimiter
 
-.. code:: bash
+.. code-block:: bash
 
-        printjson -k 'arr__2' -d '__' test3.json
+        printjson -k 'arr__2' -d '__' test.json
 
 Result:
 
-.. code:: json
+.. code-block:: json
 
         [
           "1",
