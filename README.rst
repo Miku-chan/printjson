@@ -30,10 +30,8 @@ Examples
           ],
           "test": "test"
         } 
-::
-::
- 
- - Colorized indented
+
+- Colorized indented
  
 .. code-block:: bash
  
