@@ -65,13 +65,13 @@ class Main:
         """Loadf and check JSON file"""
         if not os.path.isfile(self.path):
             if self.print_errors:
-                sys.stderr.write("Error: File %s not found" % self.path)
+                sys.stderr.write("Error: File %s not found\n" % self.path)
             sys.exit(3)
         try:
             file = open(self.path)
         except Exception:
             if self.print_errors:
-                sys.stderr.write("Error: Couldn't open %s" % self.path)
+                sys.stderr.write("Error: Couldn't open %s\n" % self.path)
             sys.exit(4)
         try:
             data = json.load(file)
