@@ -15,7 +15,9 @@ Features
 Examples
 --------
 
-- test.json::
+- test.json
+ 
+.. code:: json
 
         {
           "arr": [
@@ -30,23 +32,33 @@ Examples
         }
 
 
- - Colorized indented::
+ - Colorized indented
+ 
+.. code:: bash
  
         printjson test.json
 
-- Minimized monochrome::
-
+- Minimized monochrome
+ 
+.. code:: bash
+ 
         printjson -om test.json
 
-Result::
-        
+Result:
+ 
+.. code:: json
+ 
         {"test":"test","arr":[123,"λάμβδα ラムダ lambda",["1","2"]]}
 
-- Print third entry of "arr" array, using "__" as delimiter::
+- Print third entry of "arr" array, using "__" as delimiter
+
+.. code:: bash
 
         printjson -k 'arr__2' -d '__' test3.json
 
-Result::
+Result:
+
+.. code:: json
 
         [
           "1",
